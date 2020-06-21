@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="144dp"
+        tools:ignore="HardcodedText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:alpha="0"
+            android:text="Covid-19 Tracker"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
+            android:textColor="#2766AF"
+            android:textSize="25sp"
+            tools:alpha="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="80dp"
+            android:text="Stay Home !"
+            android:textColor="#93358B"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:theme="@style/Widget.AppCompat.Button"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Stay Safe !"
+            android:textColor="#5EC1CD"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:theme="@style/Widget.AppCompat.Button"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/app_logo"
+        android:visibility="visible"
+        android:padding="20dp"/>
+
+</FrameLayout>
